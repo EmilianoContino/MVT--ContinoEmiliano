@@ -23,4 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("hola/", hola),
     path("mi-template/", views.mi_template),
+    path('crear-familiar/<str:nombre>/<str:apellido>/<str:edad>/', views.crear_familiar),
+    path('ver-familiares/', views.ver_familiares),
 ]
